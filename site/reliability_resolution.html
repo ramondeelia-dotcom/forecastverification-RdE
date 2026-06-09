@@ -28,8 +28,15 @@ can be generated from the Brier score. The Brier score can be decomposed into th
 and interpreted using the reliability diagram (observed frequency plotted as a function of
 forecast category). For <i>K</i> probability categories and <i>N</i> samples:
 
-<p><center><img src="BSterms.gif"
- alt="Brier score decomposition" align="middle" height="75" width="501"></center>
+  <div>
+        <p class="equation">
+          $$\text{BS} = \frac{1}{N}\sum_{i=1}^{N}(x_i - y_i)^2 = \frac{1}{N}\sum_{k=1}^{K}n_k(x_k - \bar{y}_k)^2 -
+          \frac{1}{N}\sum_{k=1}^{K}n_k(\bar{y}_k - \bar{y})^2 + \bar{y}(1-\bar{y})$$
+        </p>
+  </div>
+
+ <!-- <p><center><img src="BSterms.gif"
+ alt="Brier score decomposition" align="middle" height="75" width="501"></center>  -->
 
 <table cellspacing="20">
 <tr>
